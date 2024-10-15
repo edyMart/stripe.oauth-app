@@ -1,0 +1,70 @@
+{
+  "id": "mx.com.vinneren-stripe-mw-oauth",
+  "version": "0.0.1",
+  "name": "Vinneren OAuth Connector",
+  "icon": "logo_v1.png",
+  "permissions": [
+    {
+      "permission": "payment_method_write",
+      "purpose": "is need to create a payment method "
+    },
+    {
+      "permission": "payment_method_read",
+      "purpose": "is need to create a payment method "
+    },
+    {
+      "permission": "payment_intent_write",
+      "purpose": "is need to create a payment intent "
+    },
+    {
+      "permission": "payment_intent_read",
+      "purpose": "is need to create a payment intent "
+    },
+    {
+      "permission": "charge_write",
+      "purpose": "is need to create a payment intent "
+    },
+    {
+      "permission": "charge_read",
+      "purpose": "is need to create a payment intent "
+    },
+    {
+      "permission": "webhook_read",
+      "purpose": "for use a webhook to appple and google pay "
+    },
+    {
+      "permission": "customer_read",
+      "purpose": "for create a webhook to appple and google pay "
+    },
+    {
+      "permission": "customer_write",
+      "purpose": "for create a webhook to appple and google pay "
+    }
+  ],
+  "ui_extension": {
+    "views": [
+      {
+        "viewport": "stripe.dashboard.home.overview",
+        "component": "Home"
+      },
+      {
+        "viewport": "stripe.dashboard.customer.list",
+        "component": "Customers"
+      },
+      {
+        "viewport": "stripe.dashboard.customer.detail",
+        "component": "CustomerDetails"
+      }
+    ],
+    "content_security_policy": {
+      "connect-src": null,
+      "image-src": null,
+      "purpose": ""
+    }
+  },
+  "allowed_redirect_uris": [
+    "https://stripe.myvtex.com/_v/stripe.payment-provider-connector/v0/webhook"
+  ],
+  "stripe_api_access_type": "oauth",
+  "distribution_type": "public"
+}
