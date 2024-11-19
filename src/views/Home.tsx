@@ -27,16 +27,7 @@ const Home = ({ userContext, environment }: ExtensionContextValue) => {
       footerContent={
         <>
           <Box css={{ marginBottom: "medium" }}>
-            Questions? Get help with your app from the{" "}
-            <Link
-              external
-              href="https://stripe.com/docs/stripe-apps"
-              target="_blank"
-              type="secondary"
-            >
-              Stripe Apps docs
-            </Link>
-            ,
+            Questions? Get help with your app from the {" "}
             <Link
               external
               href="https://support.stripe.com/"
@@ -61,36 +52,14 @@ const Home = ({ userContext, environment }: ExtensionContextValue) => {
     >
       <Box css={{ stack: "y", rowGap: "large" }}>
         <Box>
-          <Box css={{ font: "heading" }}>Welcome to Stripe Apps</Box>
-          This Hello World app will introduce you to the basics of developing
-          your own app and consists of three{" "}
-          <Link
-            external
-            href="https://docs.stripe.com/stripe-apps/reference/viewports"
-          >
-            viewports
-          </Link>
-          :
+          <Box css={{ font: "heading" }}>Welcome to VTEX Payments Plugin V2</Box>
+          This App is a Oauth V2 App and work with VTEX account{" "}
         </Box>
         <Box css={{ whiteSpace: "break-spaces" }}>
-          1. Dashboard homepage{" "}
-          <Inline css={{ color: "secondary" }}>[currently on]</Inline> {"\n"}
-          2. Customers page {"\n"}
-          3. Customer details page
-        </Box>
-        <Box>
-          First navigate to the customer list view by clicking on the{" "}
-          <Inline css={{ fontFamily: "monospace" }}>Customers</Inline> tab in
-          the left sidebar.
+          1. <Link external href="https://vtex.com/us-en/about-us/" target="_blank" type="secondary">About VTEX</Link>
+          2. <Link external href="https://sites.google.com/vinneren.com.mx/documentacion-publica/home" target="_blank" type="secondary">About this APP</Link>
         </Box>
         <Divider />
-        <Box css={{ color: "info" }}>
-          Edit the file{" "}
-          <Inline css={{ fontFamily: "monospace", wordBreak: "break-all" }}>
-            src/views/Home.tsx
-          </Inline>{" "}
-          and save to reload this view.
-        </Box>
       </Box>
     </ContextView>
   );

@@ -1,6 +1,6 @@
 {
   "id": "mx.com.vinneren-stripe-mw-oauth",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "name": "VTEX Payments Plugin V2",
   "icon": "logo_v1.png",
   "permissions": [
@@ -46,14 +46,6 @@
       {
         "viewport": "stripe.dashboard.home.overview",
         "component": "Home"
-      },
-      {
-        "viewport": "stripe.dashboard.customer.list",
-        "component": "Customers"
-      },
-      {
-        "viewport": "stripe.dashboard.customer.detail",
-        "component": "CustomerDetails"
       }
     ],
     "content_security_policy": {
@@ -63,8 +55,7 @@
     }
   },
   "allowed_redirect_uris": [
-    "https://stripe.myvtex.com/_v/stripe.payment-provider-connector/v0/webhook",
-    "https://stripe.myvtex.com/_v/stripe.payment-provider-connector/v0/webhook_v2"
+    "https://stripe-middleware-oauth-database-prod-release-v0-266363803198.us-central1.run.app/external-connectivity/v0/security/pre-callback"
   ],
   "stripe_api_access_type": "oauth",
   "distribution_type": "public"
